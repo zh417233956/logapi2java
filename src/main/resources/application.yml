@@ -1,0 +1,20 @@
+#server.port=8090
+server:
+  port: 8090
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      custom:
+        hosts:
+          - 192.168.50.190
+        ports:
+          - 27017
+        username: test
+        password: 123456
+        database: unittest
+        connections-per-host: 20
+        min-connections-per-host: 20
+#      uri: mongodb://test:123456@192.168.50.190:27017/unittest
